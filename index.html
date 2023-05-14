@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="box">
+        <div >
+            <img class="logo" src="./assets/logo1.jpeg" alt="">
+            <h2 class="head">Temperature Converter</h2>
+            <img id="img" class="logo" src="./assets/convert-img.jpg" alt="">
+        </div>
+
+        <div class="inputs">
+            <input  class="input" id="user-input" type="number" placeholder="Enter the tempetarature">
+        </div>
+
+        <div class="in-out">
+         <label class="input label" for="">From:</label>
+            <select class="input drop" name="in" id="in">
+            <option value="select">Select</option>
+            <option value="CELSIUS">CELSIUS</option>
+            <option value="FAHRENHEIT">FAHRENHEIT</option>
+            <option value="KELVIN">KELVIN</option>
+         </select>
+
+          <label  id="to" class="input label" for="">To:</label>
+          <select class="input drop" name="out" id="out">
+            <option value="Select">Select</option>
+            <option value="CELSIUS">CELSIUS</option>
+            <option value="FAHRENHEIT">FAHRENHEIT</option>
+            <option value="KELVIN">KELVIN</option>
+          </select>
+
+    </div>
+    <div class="btns">
+        <button class="clear btn"  id="clear">Clear</button>
+        <button class="convert btn" id="convert">Convert</button>
+
+    </div>
+    <div>
+        <input class="result input" type="text" placeholder="Result" value="" id="result">
+    </div>
+   </div>
+   <div>
+    <center><footer class="copy">
+        <p> Copyright &copy; 2023 Akash .All Rights Reserved</p>
+    </footer></center>  
+
+        
+    </div>
+    
+
+    <script src="./converter.js"></script>
+    
+</body>
+</html>
